@@ -1,59 +1,156 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
-
-body {
-	background: #f3f3f3;
-	font-family: 'Open Sans', sans-serif;
+header{
+    height: 65px;
+    background-color: #a74197;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
 }
-
-
-a {
-	text-decoration: none;
+.menu-h h3{
+  margin-right: 10px;
 }
-
-.contenedor {
-	width: 90%;
-	max-width: 800px;
-	margin: auto;
+.cara{
+    border-radius: 50%;
+    height: 200px;
 }
-
-/* ------------------------- */
-/* HEADER */
-/* ------------------------- */
-
-header {
-	padding: 40px 0;
+.uno{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: calc(100vh - 65px);
+    background-color: #253e88;
+    color: white;
+    /* padding-top: 10%; */
 }
-
-header .logo {
-	text-align: center;
-	margin-bottom: 40px;
+.caja-central{
+    margin-top: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 50%;
 }
-
-header .logo p {
-	color: #9B9B9B;
+.caja-cara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #a74197;
 }
-
-header .logo img {
-    width:300px;
-    height:300px;
-    border-radius:150px;
-    border:10px solid #84b6f4;
-}
-section{
-    height: 60%;
-    margin-top: 10px;
+.caja-presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: #F2F2F2;
+    color: #303030;
     padding: 10px;
 }
-.seccion1{
-    background: #84b6f4;
-   
+
+.dos{
+    background-color: #F2F2F2;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #303030;
+    padding-left: 20%;
+    padding-right: 20%;
 }
-.seccion2{
-    background:#84b6f4;
+.aptitudes{
+    width: 50%;
+}
+.tech-list{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.tech{
+    height: 90px;
+}
+
+.tres{
+    background-color: #253e88;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    color: #F2F2F2;
+}
+.proyectos{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    text-align: center;
+    width: 30%;
+    border: solid #F2F2F2 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card img{
+    width: 100%;
+}
+.card a, footer a {
+    color: white;
+}
+
+.red-social{
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+@media (max-width: 1000px) {
+    .caja-central{
+        width: 90%;
+        height: 70%;
+        flex-direction: column;
+    }
+    .caja-cara{
+        width: 100%;
+        height: 50%;
+    }
+    .caja-presentacion{
+        width: 100%;
+        height: 50%;
+        align-items: flex-start;
+    }
+    .aptitudes{
+        width: auto;
+    }
+    .dos{
+        height: auto;
+        padding: 0 10px 10px 10px;
+
+    }
+    .tres{
+        height: auto;
+    }
+    .proyectos{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    .card{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .red-social{
+        margin: 0 10px 0 10px;
+    }
 }
 
 /* ------------------------- */
@@ -110,16 +207,3 @@ footer .creado-por {
 
 footer .creado-por a {color: #000;}
 footer .creado-por a:hover {text-decoration: underline;}
-
-/* ------------------------- */
-/* Mediaqueries */
-/* ------------------------- */
-@media screen and (max-width: 700px) {
-	.grid .item {
-		width: calc(50% - 20px);
-	}
-
-	header .barra-busqueda {
-		width: 100%;
-	}
-}
