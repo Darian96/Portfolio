@@ -5,20 +5,21 @@ body {
 
 header {
     height: 65px;
-    background-color: #040b14;
-    color: white;
+    background-color: #FF5656;
+    color: black;
     display: flex;
-    align-items: center;
     padding-left: 25px;
 }
 
 .menu-h h3 {
     margin-right: 10px;
+    align-items: center;
 }
 
 .cara {
     border-radius: 50%;
     height: 200px;
+    border: 7px solid #000000;
 }
 
 .uno {
@@ -27,8 +28,9 @@ header {
     flex-direction: row;
     justify-content: center;
     height: calc(100vh - 65px);
-    background-color: #253e88;
-    color: white;
+    background-color: #0e2e58;
+    /*background-image: url(../img/icons8-rocket-48.png);*
+    background-repeat: no-repeat;
     /* padding-top: 10%; */
 }
 
@@ -39,7 +41,8 @@ header {
     flex-direction: row;
     border-radius: 20px;
     overflow: hidden;
-    height: 50%;
+    height: 45%;
+    border: 3px solid rgb(0, 0, 0);
 }
 
 .caja-cara {
@@ -47,7 +50,9 @@ header {
     justify-content: center;
     align-items: center;
     width: 40%;
-    background-color: #a74197;
+    /*background-color: #253e88;*/
+    background-color: #FF5656;
+    border-right: 3px solid black;
 }
 
 .caja-presentacion {
@@ -87,13 +92,13 @@ header {
 }
 
 .tres {
-    background-color: #253e88;
+    background-color: #FF5656;
     height: 600px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-    color: #F2F2F2;
+    color: #000000;
 }
 
 .proyectos {
@@ -116,7 +121,7 @@ header {
 
 .card a,
 footer a {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .red-social {
