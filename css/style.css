@@ -1,24 +1,27 @@
-
-body{
+body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
-header{
+
+header {
     height: 65px;
-    background-color: #a74197;
+    background-color: #040b14;
     color: white;
     display: flex;
     align-items: center;
     padding-left: 25px;
 }
-.menu-h h3{
-  margin-right: 10px;
+
+.menu-h h3 {
+    margin-right: 10px;
 }
-.cara{
+
+.cara {
     border-radius: 50%;
     height: 200px;
 }
-.uno{
+
+.uno {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -28,7 +31,8 @@ header{
     color: white;
     /* padding-top: 10%; */
 }
-.caja-central{
+
+.caja-central {
     margin-top: 10%;
     width: 50%;
     display: flex;
@@ -37,14 +41,16 @@ header{
     overflow: hidden;
     height: 50%;
 }
-.caja-cara{
+
+.caja-cara {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40%;
     background-color: #a74197;
 }
-.caja-presentacion{
+
+.caja-presentacion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +60,7 @@ header{
     padding: 10px;
 }
 
-.dos{
+.dos {
     background-color: #F2F2F2;
     height: 700px;
     display: flex;
@@ -65,20 +71,22 @@ header{
     padding-left: 20%;
     padding-right: 20%;
 }
-.aptitudes{
+
+.aptitudes {
     width: 50%;
 }
-.tech-list{
+
+.tech-list {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
 }
 
-.tech{
+.tech {
     height: 90px;
 }
 
-.tres{
+.tres {
     background-color: #253e88;
     height: 600px;
     display: flex;
@@ -87,123 +95,147 @@ header{
     align-items: center;
     color: #F2F2F2;
 }
-.proyectos{
+
+.proyectos {
     width: 60%;
     display: flex;
     justify-content: space-between;
 }
-.card{
+
+.card {
     text-align: center;
     width: 30%;
     border: solid #F2F2F2 1px;
     border-radius: 10px;
     padding: 10px;
 }
-.card img{
+
+.card img {
     width: 100%;
 }
-.card a, footer a {
+
+.card a,
+footer a {
     color: white;
 }
 
-.red-social{
+.red-social {
     height: 60px;
     background-color: #F2F2F2;
     border-radius: 10px;
 }
+
 @media (max-width: 1000px) {
-    .caja-central{
+    .caja-central {
         width: 90%;
         height: 70%;
         flex-direction: column;
     }
-    .caja-cara{
+    .caja-cara {
         width: 100%;
         height: 50%;
     }
-    .caja-presentacion{
+    .caja-presentacion {
         width: 100%;
         height: 50%;
         align-items: flex-start;
     }
-    .aptitudes{
+    .aptitudes {
         width: auto;
     }
-    .dos{
+    .dos {
         height: auto;
         padding: 0 10px 10px 10px;
-
     }
-    .tres{
+    .tres {
         height: auto;
     }
-    .proyectos{
+    .proyectos {
         flex-direction: column;
         width: 100%;
         align-items: center;
         justify-content: space-between;
         padding-bottom: 20px;
     }
-    .card{
+    .card {
         width: 80%;
         margin-top: 20px;
     }
-    .red-social{
+    .red-social {
         margin: 0 10px 0 10px;
     }
 }
 
+
 /* ------------------------- */
+
+
 /* Footer */
+
+
 /* ------------------------- */
+
 footer .redes-sociales {
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	padding: 20px;
-	flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 footer .redes-sociales a {
-	display: block;
-	width: 60px;
-	height: 60px;
-	background: #000;
-	color: #fff;
-	margin: 20px;
-	text-align: center;
-	border-radius: 100px;
-	transition: .3s ease all;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #000;
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+    border-radius: 100px;
+    transition: .3s ease all;
 }
 
-footer .redes-sociales .github {background: #1da1f2;}
-footer .redes-sociales .linkedin {background: #3b5998;}
-footer .redes-sociales .facebook {background: #77fdee;}
+footer .redes-sociales .github {
+    background: #1da1f2;
+}
+
+footer .redes-sociales .linkedin {
+    background: #3b5998;
+}
+
+footer .redes-sociales .facebook {
+    background: #77fdee;
+}
 
 footer .redes-sociales a i {
-	font-size: 20px;
-	line-height: 60px;
+    font-size: 20px;
+    line-height: 60px;
 }
 
 footer .contenedor-icono:hover a {
-	animation: icono .5s ease;
+    animation: icono .5s ease;
 }
 
 @keyframes icono {
-	from {
-		transform: rotate3d(0,0,0,0);
-	}
-	to {
-		transform: rotate3d(0,1,0, 360deg);
-	}
+    from {
+        transform: rotate3d(0, 0, 0, 0);
+    }
+    to {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
 }
 
 footer .creado-por {
-	margin-bottom: 40px;
-	text-align: center;
-	font-size: 14px;
-	color: #3850d8;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #3850d8;
 }
 
-footer .creado-por a {color: #000;}
-footer .creado-por a:hover {text-decoration: underline;}
+footer .creado-por a {
+    color: #000;
+}
+
+footer .creado-por a:hover {
+    text-decoration: underline;
+}
